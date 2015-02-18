@@ -8,16 +8,15 @@ usage:
 
 ```
 git clone https://github.com/ddqd/qxtglobalshortcut5.git
-	
 ```
 
 add in ur .pro file:
 ```
-	include(qxtglobalshortcut5/qxt.pri)
+include(qxtglobalshortcut5/qxt.pri)
 ```
 
 example code:
-```c++
+```cpp
 #include <QDebug>
 #include "qxtglobalshortcut.h"
 ...
