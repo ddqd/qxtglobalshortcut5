@@ -14,7 +14,7 @@ WindowList qxt_getWindowsForPSN(ProcessSerialNumber *psn)
     WindowList wlist;
     if (!psn) return wlist;
 
-    CGError err(noErr);
+    CGError err((CGError)noErr);
 
     // get onnection for given process psn
     CGSConnection procConnection;
@@ -81,7 +81,7 @@ WId QxtWindowSystem::activeWindow()
 QString QxtWindowSystem::windowTitle(WId window)
 {
     CGSValue windowTitle;
-    CGError err(noErr);
+    CGError err((CGError)noErr);
     static CGSConnection connection = _CGSDefaultConnection();
 
     // This code is so dirty I had to wash my hands after writing it.
